@@ -16,6 +16,8 @@ jobs:
               uses: actions/setup-node@v3
               with: 
                 node-version: 18.x
+            - name: list out the files
+              run: ls-la
             - name: Install dependencies
               run: |
                  cd hellobk
