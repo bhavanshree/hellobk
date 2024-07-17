@@ -13,10 +13,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Install Node
+      - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: 18.x
 
       - name: Install dependencies
         run: |
@@ -48,7 +48,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.REACT_SECRETS }} # Use a correct token name
+          github_token: ${{ secrets.REACT_SECRETS }} # Ensure the token is correct
           publish_dir: ./build
-
-
