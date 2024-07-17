@@ -17,7 +17,6 @@ jobs:
               with: 
                 node-version: 18.x
             - name: Install dependencies
-<<<<<<< HEAD
               run: |
                  cd hellobk
                  npm install
@@ -30,7 +29,6 @@ jobs:
               with:
                 name: production file
                 path: ./hellobk/build
-=======
               run: npm install
             - name: Build project
               run: npm run build
@@ -56,5 +54,4 @@ jobs:
                   github_token: ${{ secrets.REACT_SECRETS }} #token key
                   publish_dir: ./build
 
->>>>>>> 73905bb3518ff5a47222edf1301093c64102e98a
 
