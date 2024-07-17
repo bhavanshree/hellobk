@@ -19,13 +19,9 @@ jobs:
             - name: list out the files
               run: ls -la
             - name: Install dependencies
-              run: |
-                 cd hellobk
-                 npm install
+              run: npm install
             - name: Build project
-              run: | 
-                cd hellobk
-                npm run build
+              run: npm run build
             - name: upload artifact to enable deployment
               uses: actions/upload-artifact@v3
               with:
