@@ -19,14 +19,10 @@ jobs:
           node-version: 18.x
 
       - name: Install dependencies
-        run: |
-          cd hellobk
-          npm install
+        run: npm install
 
       - name: Build project
-        run: |
-          cd hellobk
-          npm run build
+        run: npm run build
 
       - name: Upload artifact to enable deployment
         uses: actions/upload-artifact@v3
