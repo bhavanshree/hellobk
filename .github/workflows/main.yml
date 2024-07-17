@@ -23,7 +23,7 @@ jobs:
             - name: upload artifact to enable deployment
               uses: actions/upload-artifact@v3
               with:
-                name: production file
+                name: production-file
                 path: ./build
 
         #Deploy job
