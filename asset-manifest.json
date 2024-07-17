@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/hellobk/static/css/main.f855e6bc.css",
+    "main.js": "/hellobk/static/js/main.009f8fde.js",
+    "static/js/453.ed3810f9.chunk.js": "/hellobk/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/hellobk/index.html",
+    "main.f855e6bc.css.map": "/hellobk/static/css/main.f855e6bc.css.map",
+    "main.009f8fde.js.map": "/hellobk/static/js/main.009f8fde.js.map",
+    "453.ed3810f9.chunk.js.map": "/hellobk/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.009f8fde.js"
+  ]
+}
