@@ -28,7 +28,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: production-file
-          path: hellobk/build
+          path: ./build
 
   # Deploy job
   deploy:
