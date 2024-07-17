@@ -26,4 +26,20 @@ jobs:
                 name: production file
                 path: ./build
 
+        #Deploy job
+    deploy:
+        needs: build
+        runs-on: ubuntu:latest
+        steps: 
+            - name: Download artifact
+              uses: actions/download-artifact@v3
+              with:
+                  name: production file
+                  path: ./build
+            - name: Deploy the Github pages
+              uses: peaceiris/actions-gh-pages@v3
+              with:
+                  github_token: ${{ secrets.key }} #token key
+                  publish_dir: ./build
+
 
