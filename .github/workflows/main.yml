@@ -1,1 +1,33 @@
+name: hello CI/CD
+
+on:
+    push:
+        branches:
+            - main
+jobs:
+    #Build job
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: chceckout code
+              uses: actions/checkout@v3
+            
+            - name: Install node
+              uses: actions/setup-node@v3
+              with: 
+                node-version: 18.x
+            - name: Install dependencies
+              run: |
+                 cd hellobk
+                 npm install
+            - name: Build project
+              run: | 
+                cd hellobk
+                npm run build
+            - name: upload artifact to enable deployment
+              uses: actions/upload-artifact@v3
+              with:
+                name: production file
+                path: ./hellobk/build
+
 
